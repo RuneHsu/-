@@ -9,7 +9,15 @@
  **************************************************************************/
 // Covert a sub binary-search-tree into a sorted double-linked list  
 // Input: pNode -           the head of the sub tree  
-//        pLastNodeInList - the tail of the double-linked list  
+//        pLastNodeInList - the tail of the double-linked list 
+
+struct BSTreeNode // a node in the binary search tree
+    {
+        int          m_nValue; // value of node
+        BSTreeNode  *m_pLeft;  // left child of node
+        BSTreeNode  *m_pRight; // right child of node
+    };
+    
 void ConvertNode(BSTreeNode* pNode, BSTreeNode*& pLastNodeInList)  
 {  
       if(pNode == NULL)  
