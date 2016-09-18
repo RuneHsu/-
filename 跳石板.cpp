@@ -26,8 +26,7 @@ int main()
     cin >> m;
     vector<int> res(m+1, 0);     // use res[x] to record reach step x should take how much times.
     res[n] = 1;                 
-    for (i = n; i <= m; i++)
-    {
+    
         for (int i = n; i <= m ; i++)
         {
           vector<int> arr;          // use to record the divisor
@@ -45,7 +44,6 @@ int main()
           }
           
         }
-    }
     if (res[m] == 0)          // cannot be reached
          cout << -1 << endl;
     else 
